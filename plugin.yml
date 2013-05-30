@@ -1,0 +1,17 @@
+name: RegionSchematic
+main: blha303.regionschematic.RegionSchematic
+version: 0.0.1
+depend: [WorldEdit]
+softdepend: [GriefPrevention, PlotMe, Towny, WorldGuard]
+commands:
+  rs:
+    description: Export region as schematic
+    usage: /rs <pluginname> [playername]
+    permission: regionschematic.export
+permissions:
+  regionschematic.export:
+    description: Allows the player to use /rs
+    default: true
+  regionschematic.export.other:
+    description: Allows the player to export regions from players other than themselves
+    default: op
